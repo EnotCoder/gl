@@ -30,7 +30,7 @@ int main() {
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glBegin(GL_QUADS);
+        glBegin(GL_POLYGON);
         glColor3f(1,0,0);
         glVertex3fv(vert[0]);
         glColor3f(0,1,0);
@@ -40,6 +40,7 @@ int main() {
         glColor3f(1,1,1);
         glVertex3fv(vert[3]);
         glEnd();
+
         // Обработка событий
         glfwPollEvents();
 
