@@ -1,9 +1,16 @@
-#include <iostream>
+#include <ncurses.h>
 
-using namespace std;
+int main() {
+    	initscr();           // Инициализация ncurses
+    	noecho();            // Не отображать введенные символы
+    	cbreak();            // Отключить буферизацию ввода
+    	//keypad(stdscr, TRUE); // Обрабатывать специальные клавиши
+	for (int i =0;i<23;i++){
+		printw("%d\n", i + 1);	
+	};
+	move(7,0);
+	refresh();           // Обновить экран
 
-int main(){
+    	return 0;
+}
 
-	cout << "hello";
-
-};
