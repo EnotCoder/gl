@@ -92,9 +92,9 @@ Enot_EXTERNAL_OBJECTS =
 
 Enot: CMakeFiles/Enot.dir/main.cpp.o
 Enot: CMakeFiles/Enot.dir/build.make
-Enot: /usr/lib/x86_64-linux-gnu/libGLEW.so
-Enot: /usr/lib/x86_64-linux-gnu/libGLX.so
-Enot: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+Enot: external/glfw3/src/libglfw3.a
+Enot: /usr/lib/x86_64-linux-gnu/librt.a
+Enot: /usr/lib/x86_64-linux-gnu/libm.so
 Enot: CMakeFiles/Enot.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/enot/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Enot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Enot.dir/link.txt --verbose=$(VERBOSE)

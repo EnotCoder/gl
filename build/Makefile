@@ -129,6 +129,32 @@ Enot/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/build
 .PHONY : Enot/fast
 
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/glfw.dir/build.make external/glfw3/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/update_mappings.dir/build.make external/glfw3/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -161,7 +187,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... update_mappings"
 	@echo "... Enot"
+	@echo "... glfw"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

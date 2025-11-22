@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/GLFW
+CXX_INCLUDES = -I/home/enot/cpp/external/glfw3/include
 
 CXX_FLAGS = 
 
