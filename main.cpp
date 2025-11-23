@@ -1,11 +1,9 @@
-#define GLFW_INCLUDE_NONE
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <sstream>
-#include <fstream>
 #include <iostream>
 #include <math.h>
 
+using namespace std;
 
 int main(){
 	
@@ -15,7 +13,14 @@ int main(){
 	
 	glfwMakeContextCurrent(window);
 
+	if (!gladLoadGL()){
+		cout << "error glad";
+		return -1;
+	}
+
 	while (!glfwWindowShouldClose(window)){
+		glClearColor(1,1,1,1);
+		glClear(GL_COLOR_BUFFER_BIT);
 
 		glfwPollEvents();
 		glfwSwapBuffers(window);

@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles /home/enot/cpp/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/enot/cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles /home/enot/cpp/build/external/glad//CMakeFiles/progress.marks
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,94 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/enot/cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Enot
+# Convenience name for target.
+external/glad/CMakeFiles/glad.dir/rule:
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/CMakeFiles/glad.dir/rule
+.PHONY : external/glad/CMakeFiles/glad.dir/rule
 
-# Build rule for target.
-Enot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Enot
-.PHONY : Enot
-
-# fast build rule for target.
-Enot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/build
-.PHONY : Enot/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/glfw.dir/build.make external/glfw3/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named update_mappings
-
-# Build rule for target.
-update_mappings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
-.PHONY : update_mappings
-
-# fast build rule for target.
-update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/update_mappings.dir/build.make external/glfw3/src/CMakeFiles/update_mappings.dir/build
-.PHONY : update_mappings/fast
-
-#=============================================================================
-# Target rules for targets named glad
-
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+# Convenience name for target.
+glad: external/glad/CMakeFiles/glad.dir/rule
 .PHONY : glad
 
 # fast build rule for target.
 glad/fast:
-	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/glad.o: src/glad.c.o
+.PHONY : src/glad.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/glad.c.o:
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/src/glad.c.o
+.PHONY : src/glad.c.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/glad.i: src/glad.c.i
+.PHONY : src/glad.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/glad.c.i:
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/src/glad.c.i
+.PHONY : src/glad.c.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/glad.s: src/glad.c.s
+.PHONY : src/glad.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/glad.c.s:
+	cd /home/enot/cpp/build && $(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/src/glad.c.s
+.PHONY : src/glad.c.s
 
 # Help Target
 help:
@@ -200,13 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... update_mappings"
-	@echo "... Enot"
 	@echo "... glad"
-	@echo "... glfw"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/glad.o"
+	@echo "... src/glad.i"
+	@echo "... src/glad.s"
 .PHONY : help
 
 
@@ -218,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/enot/cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

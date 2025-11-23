@@ -65,16 +65,34 @@ CMAKE_BINARY_DIR = /home/enot/cpp/build
 # The main recursive "all" target.
 all: CMakeFiles/Enot.dir/all
 all: external/glfw3/all
+all: external/glad/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: external/glfw3/preinstall
+preinstall: external/glad/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Enot.dir/clean
 clean: external/glfw3/clean
+clean: external/glad/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory external/glad
+
+# Recursive "all" directory target.
+external/glad/all: external/glad/CMakeFiles/glad.dir/all
+.PHONY : external/glad/all
+
+# Recursive "preinstall" directory target.
+external/glad/preinstall:
+.PHONY : external/glad/preinstall
+
+# Recursive "clean" directory target.
+external/glad/clean: external/glad/CMakeFiles/glad.dir/clean
+.PHONY : external/glad/clean
 
 #=============================================================================
 # Directory level rules for directory external/glfw3
@@ -112,6 +130,7 @@ external/glfw3/src/clean: external/glfw3/src/CMakeFiles/update_mappings.dir/clea
 
 # All Build rule for target.
 CMakeFiles/Enot.dir/all: external/glfw3/src/CMakeFiles/glfw.dir/all
+CMakeFiles/Enot.dir/all: external/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enot/cpp/build/CMakeFiles --progress-num=1,2 "Built target Enot"
@@ -119,7 +138,7 @@ CMakeFiles/Enot.dir/all: external/glfw3/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Enot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Enot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/Enot.dir/rule
@@ -140,7 +159,7 @@ CMakeFiles/Enot.dir/clean:
 external/glfw3/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/glfw.dir/build.make external/glfw3/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/glfw.dir/build.make external/glfw3/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enot/cpp/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enot/cpp/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target glfw"
 .PHONY : external/glfw3/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -166,7 +185,7 @@ external/glfw3/src/CMakeFiles/glfw.dir/clean:
 external/glfw3/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/update_mappings.dir/build.make external/glfw3/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/update_mappings.dir/build.make external/glfw3/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enot/cpp/build/CMakeFiles --progress-num=48 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enot/cpp/build/CMakeFiles --progress-num=50 "Built target update_mappings"
 .PHONY : external/glfw3/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -184,6 +203,32 @@ update_mappings: external/glfw3/src/CMakeFiles/update_mappings.dir/rule
 external/glfw3/src/CMakeFiles/update_mappings.dir/clean:
 	$(MAKE) $(MAKESILENT) -f external/glfw3/src/CMakeFiles/update_mappings.dir/build.make external/glfw3/src/CMakeFiles/update_mappings.dir/clean
 .PHONY : external/glfw3/src/CMakeFiles/update_mappings.dir/clean
+
+#=============================================================================
+# Target rules for target external/glad/CMakeFiles/glad.dir
+
+# All Build rule for target.
+external/glad/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enot/cpp/build/CMakeFiles --progress-num=3,4 "Built target glad"
+.PHONY : external/glad/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+external/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/glad/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enot/cpp/build/CMakeFiles 0
+.PHONY : external/glad/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: external/glad/CMakeFiles/glad.dir/rule
+.PHONY : glad
+
+# clean rule for target.
+external/glad/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/clean
+.PHONY : external/glad/CMakeFiles/glad.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "/home/enot/cpp/external/glad/CMakeLists.txt"
   "/home/enot/cpp/external/glfw3/CMake/glfw3.pc.in"
   "/home/enot/cpp/external/glfw3/CMake/glfw3Config.cmake.in"
   "/home/enot/cpp/external/glfw3/CMakeLists.txt"
@@ -150,6 +151,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "external/glfw3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "external/glfw3/src/glfw3.pc"
   "external/glfw3/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "external/glad/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -157,4 +159,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Enot.dir/DependInfo.cmake"
   "external/glfw3/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "external/glfw3/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
+  "external/glad/CMakeFiles/glad.dir/DependInfo.cmake"
   )

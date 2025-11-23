@@ -93,6 +93,7 @@ Enot_EXTERNAL_OBJECTS =
 Enot: CMakeFiles/Enot.dir/main.cpp.o
 Enot: CMakeFiles/Enot.dir/build.make
 Enot: external/glfw3/src/libglfw3.a
+Enot: external/glad/libglad.a
 Enot: /usr/lib/x86_64-linux-gnu/librt.a
 Enot: /usr/lib/x86_64-linux-gnu/libm.so
 Enot: CMakeFiles/Enot.dir/link.txt
