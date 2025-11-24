@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/enot/cpp/main.cpp" "CMakeFiles/Enot.dir/main.cpp.o" "gcc" "CMakeFiles/Enot.dir/main.cpp.o.d"
+  "/home/enot/cpp/renderer/ShaderProgram.cpp" "CMakeFiles/Enot.dir/renderer/ShaderProgram.cpp.o" "gcc" "CMakeFiles/Enot.dir/renderer/ShaderProgram.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

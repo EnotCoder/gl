@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Enot.dir/main.cpp.o"
   "CMakeFiles/Enot.dir/main.cpp.o.d"
+  "CMakeFiles/Enot.dir/renderer/ShaderProgram.cpp.o"
+  "CMakeFiles/Enot.dir/renderer/ShaderProgram.cpp.o.d"
   "Enot"
   "Enot.pdb"
 )

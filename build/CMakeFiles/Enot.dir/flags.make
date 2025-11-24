@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/enot/cpp/external/glfw3/include -I/home/enot/cpp/external/glad/include
+CXX_INCLUDES = -I/home/enot/cpp -I/home/enot/cpp/external/glfw3/include -I/home/enot/cpp/external/glad/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 

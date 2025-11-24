@@ -192,6 +192,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+renderer/ShaderProgram.o: renderer/ShaderProgram.cpp.o
+.PHONY : renderer/ShaderProgram.o
+
+# target to build an object file
+renderer/ShaderProgram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/renderer/ShaderProgram.cpp.o
+.PHONY : renderer/ShaderProgram.cpp.o
+
+renderer/ShaderProgram.i: renderer/ShaderProgram.cpp.i
+.PHONY : renderer/ShaderProgram.i
+
+# target to preprocess a source file
+renderer/ShaderProgram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/renderer/ShaderProgram.cpp.i
+.PHONY : renderer/ShaderProgram.cpp.i
+
+renderer/ShaderProgram.s: renderer/ShaderProgram.cpp.s
+.PHONY : renderer/ShaderProgram.s
+
+# target to generate assembly for a file
+renderer/ShaderProgram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Enot.dir/build.make CMakeFiles/Enot.dir/renderer/ShaderProgram.cpp.s
+.PHONY : renderer/ShaderProgram.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -207,6 +231,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... renderer/ShaderProgram.o"
+	@echo "... renderer/ShaderProgram.i"
+	@echo "... renderer/ShaderProgram.s"
 .PHONY : help
 
 
